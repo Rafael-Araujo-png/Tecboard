@@ -1,0 +1,148 @@
+/* Fonts */
+@font-face {
+    font-family: "Unbounded";
+    src: url("../fonts/Unbounded/Unbounded-Bold.ttf") format(truetype);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf") format(truetype);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-SemiBold.ttf") format(truetype);
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+/*  Desktop */
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #0E1014;
+    color: #FFFFFF;
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
+
+}
+
+.navbar li:nth-child(1) {
+    margin: 0 8% 0 0;
+}
+
+.navbar li:nth-child(2) {
+    margin: 0 0 0 8%;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Unbounded", sans-serif;
+    font-size: 64px;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 100%;
+    margin-bottom: 24px;
+}
+
+h1 span {
+    color: #9747FF;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    margin: 0px auto 40px;
+    width: 800px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-decoration: none;
+
+    width: 340px;
+    height: 66px;
+    border-radius: 36px;
+    margin: 0 20px;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+    background-color: #9747FF;
+    margin-bottom: 40px;
+}
+
+.btn:hover {
+    background-color: #8233E8;
+}
+
+/* Tablet */
+@media(max-width: 768px) {
+
+    .navbar {
+        justify-content: space-between;
+        padding: 50px 30px;
+    }
+
+    p {
+        width: 90%;
+    }
+
+    .conteudo img {
+        width: 100%;
+    }
+
+}
+
+/* Mobile */
+@media(max-width: 400px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .btn {
+        width: 251px;
+        font-size: 20px;
+    }
+
+}
